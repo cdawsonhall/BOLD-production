@@ -175,37 +175,37 @@ jQuery(document).ready(function($){
 	}); 
 	
 	//desktop menu
-	function desktopMenu(){
+	// function desktopMenu(){
 		//reveal 
-		if ($(window).scrollTop() >= wh){
-			if(!$('.header-main').is(':animated')) {
-				$('.header-main').stop(true,true).fadeIn();
-				/*push elements out of view when scrolling*/
-				if(isMobile !== true) {
-					$('.epic-graphic, .epic-caption,#epic-navigation').css({position:'absolute'});
-				}
-			}
-		} else {
-			if(!$('.header-main').is(':animated')) {
-				$('.header-main').stop(true,true).fadeOut();
-				if(isMobile !== true) {
-					$('.epic-graphic, .epic-caption,#epic-navigation').css({position:'fixed'});
-				}
-			}
-		}
-	}
+	// 	if ($(window).scrollTop() >= wh){
+	// 		if(!$('.header-main').is(':animated')) {
+	// 			$('.header-main').stop(true,true).fadeIn();
+	// 			/*push elements out of view when scrolling*/
+	// 			if(isMobile !== true) {
+	// 				$('.epic-graphic, .epic-caption,#epic-navigation').css({position:'absolute'});
+	// 			}
+	// 		}
+	// 	} else {
+	// 		if(!$('.header-main').is(':animated')) {
+	// 			$('.header-main').stop(true,true).fadeOut();
+	// 			if(isMobile !== true) {
+	// 				$('.epic-graphic, .epic-caption,#epic-navigation').css({position:'fixed'});
+	// 			}
+	// 		}
+	// 	}
+	// }
 	
 	//mobile menu
-	function mobileMenu(){
+	// function mobileMenu(){
 		//reveal 
-		if ($(window).scrollTop() <= wh) {
-			$('.header-main').hide();
-		} else {
-			$('.header-main').show();
-		}
-		$('.header').css({top:'0px'});
-		$('.header.mobileHeader').css({position:'fixed'});
-	}
+	// 	if ($(window).scrollTop() <= wh) {
+	// 		$('.header-main').hide();
+	// 	} else {
+	// 		$('.header-main').show();
+	// 	}
+	// 	$('.header').css({top:'0px'});
+	// 	$('.header.mobileHeader').css({position:'fixed'});
+	// }
 	
 	//ROLLOVER SPECIFIC ---------------------------------------------------------------------/
 	/*folio
