@@ -21,6 +21,11 @@
 		----------------------------*/
 
 		.header .inner .menu ul{display:table !important;}
+
+	/*portfolio
+	----------------------------*/
+	.folio-thumb-container .folio-thumb{width:286px !important;height:196px !important;}
+
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
@@ -218,7 +223,7 @@
 
 	
 	/*thumb-structure*/
-	.folio-thumb-container{width:22%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.5% }
+	.folio-thumb-container{width:22%;position:relative;margin:0 0 18px 0;float:left;padding:0 1.5% }
 	
 	
 	/*blog
@@ -372,7 +377,7 @@
 	
 	
 	/*thumb-structure*/
-	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.33% }
+	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;}
 	
 	/*blog
 	----------------------------*/
@@ -583,8 +588,8 @@
 	
 	
 	/*thumb-structure*/
-	/*.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.33% }*/
-	.folio-thumb-container{width:45%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 2.5% }/*two cols*/	
+	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left; }
+	.folio-thumb-container{width:100%;position:relative;margin:0 0 18px 0;float:left; }/*two cols*/	
 	
 	/*blog
 	----------------------------*/

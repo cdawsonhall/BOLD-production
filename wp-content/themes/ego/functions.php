@@ -39,6 +39,9 @@ function load_udt_scripts() {
 	}
 	wp_enqueue_script('fancybox', get_template_directory_uri() . '/js/jquery.fancybox-1.3.4.js', array('jquery','jquery-ui'), false, true);
 	wp_enqueue_script('metadata', get_template_directory_uri() . '/js/jquery.metadata.js', array('jquery'), false, true);
+
+	wp_enqueue_script('masonry', get_template_directory_uri() . '/js/masonry.pkgd.js', array(), false, true);
+
 	wp_enqueue_script('ego-common', get_template_directory_uri() . '/js/common.js', array('jquery','jquery-ui'), false, true);
 	wp_enqueue_script('shortcodes', get_template_directory_uri() . '/js/udt_shortcodes.js', array('jquery','jquery-ui'), false, true);
 	wp_enqueue_script('contact', get_template_directory_uri() . '/js/contact.js', array('jquery','jquery-ui'), false, true);
@@ -107,7 +110,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 if (function_exists('add_image_size')) {
 	add_image_size( 'udt-full-width-image', 930, 524, true );
 	add_image_size( 'udt-page-image', 680, 383, true );
-	add_image_size( 'udt-portfolio-thumb', 195, 195, true );
+	add_image_size( 'udt-portfolio-thumb', 270, 270, true );
 }
 
 // Read more should link to top of page
@@ -1443,8 +1446,8 @@ function sc_slider( $atts ) {
 	}
 	if($size=='thumbnail') {
 		$size_output='udt-portfolio-thumb';
-		$width='195px';
-		$height='195px';
+		$width='270px';
+		$height='270px';
 	} else if($size=='page-width') {
 		$size_output='udt-page-image';
 		$width='680px';

@@ -328,3 +328,14 @@ jQuery(document).ready(function($) {
 	}
 
 });
+
+/* SCRIPT FOR MASONRY.JS PORTFOLIO */
+var container = document.querySelector('#folio-grid');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 296,
+  itemSelector: '.folio-thumb-container'
+});
+msnry..imagesLoaded(function() {
+   $('#content').masonry('reload');
+  });
