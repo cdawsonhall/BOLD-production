@@ -336,6 +336,3 @@ var msnry = new Masonry( container, {
   columnWidth: 296,
   itemSelector: '.folio-thumb-container'
 });
-msnry..imagesLoaded(function() {
-   $('#content').masonry('reload');
-  });

@@ -255,7 +255,6 @@
 		.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
 		
 		/*graphic*/
-		.epic-logo{width:180px;height:180px;margin:-90px 0 0 -90px;background-attachment:inherit;}
 		.epic-graphic img{max-width:180px;height:auto;}
 		
 		/*captions*/
@@ -290,7 +289,7 @@
 		.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
 		
 		/*graphic*/
-		.epic-logo{width:180px;height:180px;margin:-90px 0 0 -90px;background-attachment:inherit;}
+		.epic-logo{width:185px;height:145px;margin:-73px 0 0 -93px;background-attachment:inherit;}
 		.epic-graphic img{max-width:180px;height:auto;}
 		
 		/*captions*/

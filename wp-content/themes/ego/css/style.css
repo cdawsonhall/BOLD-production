@@ -69,7 +69,7 @@
 	-----------------------------*/
 	
 	/*homepage*/
-	.epic-logo{width:180px;height:180px;position:fixed;left:50%;top:50%;-webkit-border-radius: 250px; -moz-border-radius: 250px; border-radius:250px; overflow:hidden; background:#ff2778; background:rgba(255,39,120,1); z-index:3; background-attachment:fixed;}
+	.epic-logo{width:370px;height:290px;margin:-145px 0 0 -185px;position:fixed;left:50%;top:50%;overflow:hidden; background:#ff2778; background:rgba(255,39,120,1); z-index:3; background-attachment:fixed;}
 	.epic-logo a{width:100%;height:100%; float:left; text-indent:-9999px;}
 	
 	

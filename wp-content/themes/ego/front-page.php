@@ -223,7 +223,7 @@ if(is_home()) { ?>
 							$homepage_secs.='
 								<div class="folio-thumb-container">
 									<div class="folio-thumb">
-										<a href="'.get_permalink($udt_project->ID).'" title="'.esc_attr($udt_project->post_title).'" class="folio-link">
+										<a href="'.get_permalink($udt_project->ID).'" title="'.esc_attr($udt_project->post_title).'">
 											<img class="lazy" src="'.$image_src[0].'" alt="'.esc_attr($udt_project->post_title).'" />
 										</a>
 									</div>

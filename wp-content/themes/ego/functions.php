@@ -111,6 +111,7 @@ if (function_exists('add_image_size')) {
 	add_image_size( 'udt-full-width-image', 930, 524, true );
 	add_image_size( 'udt-page-image', 680, 383, true );
 	add_image_size( 'udt-portfolio-thumb', 270, 270, true );
+	add_image_size( 'udt-portfolio-thumb-tall', 270, 540, true );
 }
 
 // Read more should link to top of page
