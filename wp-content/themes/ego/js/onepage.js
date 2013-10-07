@@ -205,8 +205,8 @@ jQuery(document).ready(function($){
 				return false;
 			}
 			
-			thumbW = foliothumb.find('a').find('img').width();
-			thumbH = foliothumb.find('a').find('img').height();
+			thumbW = foliothumb.parent().width();
+			thumbH = foliothumb.parent().height();
 			
 			//get refrences needed
 			thumbCaption = $(this).find('a').attr('title');

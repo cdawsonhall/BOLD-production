@@ -610,6 +610,11 @@ $meta_boxes_portfolio = array(
 		"name" => "page_layout",
 		"title" => "Page Layout",
 		"description" => 'Select the layout you would like to use for this project. If you select "Without Featured Media", the Featured Image is still required for the portfolio index thumbnail.'
+	),
+	"display_media_size" => array(
+		"name" => "display_media_size",
+		"title" => "Portfolio Index Thumbnail Size Options",
+		"description" => 'Select which thumbnail size to display for this project on the portfolio index.'
 	)
 );
 
@@ -642,6 +647,17 @@ function display_portfolio_meta_box() {
 						<option value="default" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'default'); ?>>Default</option>
 						<option value="full-width" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'full-width'); ?>>Full-width</option>
 						<option value="without-featured-media" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'without-featured-media'); ?>>Without Featured Media</option>
+					</select>
+					<p><?php echo $meta_box[ 'description' ]; ?></p>
+				</div>
+			<?php } else if($meta_box[ 'name' ]=='display_media_size') { ?>
+				<div class="form-field">
+					<label for="<?php echo $meta_box[ 'name' ]; ?>"><?php echo $meta_box[ 'title' ]; ?></label>
+					<select id="<?php echo $meta_box[ 'name' ]; ?>" name="<?php echo $meta_box[ 'name' ]; ?>" style="min-width:200px;">
+						<option value="udt-portfolio-thumb-1" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-1'); ?>>286px * 196px</option>
+						<option value="udt-portfolio-thumb-2" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-2'); ?>>286px * 398px</option>
+						<option value="udt-portfolio-thumb-3" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-3'); ?>>578px * 398px</option>
+						<option value="udt-portfolio-thumb-4" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-4'); ?>>578px * 196px</option>
 					</select>
 					<p><?php echo $meta_box[ 'description' ]; ?></p>
 				</div>
