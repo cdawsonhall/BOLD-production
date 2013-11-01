@@ -333,7 +333,8 @@ echo '
 }
 
 .epicSlider .epic-logo {
-	background:#'.returnOptionValue('slider_logo_background_color').' url('.returnUploadedImageByID('epic_slider_logo').') no-repeat center center;
+	background: url('.returnUploadedImageByID('epic_slider_logo').') no-repeat center center;
+	background-size: contain;
 }
 .epicSlider.theme-default #epic-navigation .nav-button #next:hover, 
 .epicSlider.theme-default #epic-navigation .nav-button #prev:hover,

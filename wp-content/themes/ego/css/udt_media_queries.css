@@ -21,6 +21,11 @@
 		----------------------------*/
 
 		.header .inner .menu ul{display:table !important;}
+
+	/*portfolio
+	----------------------------*/
+	#content-wrapper section.pages #grid-folio .thumb{width:286px !important;height:196px !important;}
+
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
@@ -160,13 +165,13 @@
 	/*inner pages*/
 	.header {height:auto;display:block;}
 	.header .inner{max-width:930px;margin:auto;}
-	.header .logo-container{position:relative;left:50%;margin-left:-57.5px; float:none; margin-bottom:10px;}
+	.header .logo-container{position:relative; float:left; margin-bottom:10px;}
 	
 		/* main menu
 		----------------------------*/
 
-		.header .inner .menu ul{width:100%; text-align: center;margin:0px;padding-bottom:8px;display:table !important;}
-		.header .inner .menu ul li{ float: none !important; display:inline-block; }
+		.header .inner .menu ul{text-align: center;margin:0px;padding-bottom:8px;display:table !important;}
+		.header .inner .menu ul li{ float: right !important; display:inline-block; }
 
 		
 
@@ -218,7 +223,10 @@
 
 	
 	/*thumb-structure*/
-	.folio-thumb-container{width:22%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.5% }
+	.folio-thumb-container{width:22%;position:relative;margin:0 0 18px 0;float:left;padding:0 1.5% }
+	/*.folio-thumb-container.thumb-type-1{width:286px !important;height:196px!important;}*/
+	/*.folio-thumb-container.thumb-type-2{width:286px!important;height:398px!important;}*/
+
 	
 	
 	/*blog
@@ -298,7 +306,7 @@
 	/*inner pages*/
 	.header {height:auto;display:block;}
 	.header .inner{max-width:930px;margin:auto;}
-	.header .logo-container{position:relative;left:50%;margin-left:-57.5px; float:none;}
+	.header .logo-container{position:relative;float:left;}
 	
 		/* main menu
 		----------------------------*/
@@ -315,7 +323,7 @@
 		
 	/*.header .inner .mobileMenuToggle{display:block;}*/
 	.header .inner .menu ul { display:none; }
-	.header .inner select { display:block !important; width:400px; margin:10px auto; }
+	.header .inner select { display:inline-block !important; width:auto; margin:15px; float:right}
 
 	/*----------------------------
 	ii.-- Content
@@ -372,7 +380,7 @@
 	
 	
 	/*thumb-structure*/
-	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.33% }
+	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;}
 	
 	/*blog
 	----------------------------*/
@@ -506,7 +514,7 @@
 	/*inner pages*/
 	.header {height:auto;display:block;}
 	.header .inner{max-width:930px;margin:auto;}
-	.header .logo-container{position:relative;left:50%;margin-left:-57.5px; float:none;}
+	.header .logo-container{position:relative;float:left;}
 
 		/* main menu
 		----------------------------*/
@@ -523,7 +531,7 @@
 		
 	/*.header .inner .mobileMenuToggle{display:block;}*/
 	.header .inner .menu ul { display:none; }
-	.header .inner select { display:block !important; width:270px; margin:10px auto; }
+	.header .inner select { display:inline-block !important; width:270px; margin:15px; float: right}
 
 		
 	/*----------------------------
@@ -583,8 +591,8 @@
 	
 	
 	/*thumb-structure*/
-	/*.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 1.33% }*/
-	.folio-thumb-container{width:45%;position:relative;margin:0 0 18px 0;float:left;border-radius:200px;padding:0 2.5% }/*two cols*/	
+	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left; }
+	.folio-thumb-container{width:100%;position:relative;margin:0 0 18px 0;float:left; }/*two cols*/	
 	
 	/*blog
 	----------------------------*/
@@ -698,4 +706,6 @@
 	.pricing_table .pricing_table_col > ul > li .submit { -moz-box-sizing: border-box;float: none;padding: 10px 8px; width: 80%;}
 
 }
+
+
 

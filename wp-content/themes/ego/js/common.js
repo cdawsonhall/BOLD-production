@@ -73,8 +73,9 @@ jQuery(document).ready(function($){
 				return false;
 			}
 			 
-			thumbW = $(this).find('a').find('img').width();
-			thumbH = $(this).find('a').find('img').height();
+			thumbW = $(this).closest('.folio-thumb-container').width();.width();
+			alert($(this).closest('.folio-thumb-container').width();.width();)
+			thumbH = $(this).width();.height();
 			
 			//get refrences needed
 			thumbCaption = $(this).find('a').attr('title');
@@ -327,4 +328,12 @@ jQuery(document).ready(function($) {
 		$('.header .inner select').css({'display':'none'});
 	}
 
+});
+
+/* SCRIPT FOR MASONRY.JS PORTFOLIO */
+var container = document.querySelector('#folio-grid');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 296,
+  itemSelector: '.folio-thumb-container'
 });

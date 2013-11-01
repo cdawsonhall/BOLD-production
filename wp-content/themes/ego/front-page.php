@@ -214,25 +214,39 @@ if(is_home()) { ?>
 				if($count_udt_portfolio>0) {
 				
 					$homepage_secs.='
-					<div id="ajaxwrapper">
-						<div id="folio-navigation">
-							<ul>
-								<li id="prevProject"><a href="#"></a></li>
-								<li id="closeProjectMobile"><a href="#"></a></li>
-								<li id="nextProject"><a href="#"></a></li>
-							</ul>
-						</div>
-						<div id="closeProject"><a href="'.get_permalink().'#'.$homepage_section->post_name.'"></a></div>
-						<div id="loader"></div>
-						<div id="ajax-content-outer"><div id="ajax-content-inner"></div></div>
-					</div>
-					<div id="folio-grid">'."\n";
-					
+					<div id="folio-grid" class="js-masonry" >'."\n";
+
 					foreach ( $udt_portfolio as $udt_project ) {
+						
+						$display_media_size='udt-portfolio-thumb-1';
+						$thumb_type='thumb-type-1';
+
 						if (has_post_thumbnail($udt_project->ID)) {
+
+							if(isset($udt_portfolio_meta['display_media_size']) && $udt_portfolio_meta['display_media_size']!='') {
+								$display_media_size=$udt_portfolio_meta['display_media_size'];
+								if($display_media_size=='udt-portfolio-thumb-1') {
+									$thumb_type='thumb-type-1';
+								} else if($display_media_size=='udt-portfolio-thumb-2') {
+									$thumb_type='thumb-type-2';
+								} else if($display_media_size=='udt-portfolio-thumb-3') {
+									$thumb_type='thumb-type-3';
+								} else if($display_media_size=='udt-portfolio-thumb-4') {
+									$thumb_type='thumb-type-4';
+								}
+							}
+
 							$project_thumbnail_id = get_post_thumbnail_id( $udt_project->ID );
-							$image_src=wp_get_attachment_image_src($project_thumbnail_id,'udt-portfolio-thumb');
-							$homepage_secs.='<div class="folio-thumb-container"><div class="folio-thumb"><a href="'.get_permalink($udt_project->ID).'" title="'.esc_attr($udt_project->post_title).'" class="folio-link"><img class="lazy" src="'.$image_src[0].'" alt="'.esc_attr($udt_project->post_title).'" /></a></div></div>';
+							$image_src=wp_get_attachment_image_src($project_thumbnail_id, $display_media_size);
+
+							$homepage_secs.='
+								<div class="folio-thumb-container '.$thumb_type.'">
+									<div class="folio-thumb">
+										<a href="'.get_permalink($udt_project->ID).'" title="'.esc_attr($udt_project->post_title).'">
+											<img class="lazy" src="'.$image_src[0].'" alt="'.esc_attr($udt_project->post_title).'" />
+										</a>
+									</div>
+								</div>';
 						}
 					}
 					

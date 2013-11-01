@@ -52,21 +52,7 @@ jQuery(document).ready(function($){
 	sliderHeight();
 	$('#wrapper, #footer').show();
 
-	var lH = $('.epic-logo').height();
-	var	lW = $('.epic-logo').width();
-	$('.epic-logo').css({marginTop:-(lH/2),marginLeft:-(lW/2)});
-	$('.epic-logo').hover(function() {
-		if(isMobile === true) {
-			return false;
-		}
-		$(this).animate({width:lH+50,height:lW+50,marginLeft:-((lH+50)/2),marginTop:-((lW+50)/2)},{queue:false});
-	},
-	function() {
-		if(isMobile === true) {
-			return false;
-		}
-		$(this).animate({width:lH,height:lW,marginLeft:-lH/2,marginTop:-lW/2},{queue:false});
-	});
+	
 
 	//PARALLAX ----------------------------------------------------------------------------/
 		
@@ -166,13 +152,13 @@ jQuery(document).ready(function($){
 	
 	/*nav reveal
 	-------------------*/
-	$(window).bind('scroll', function(){
-		if(isMobile === false){
-			desktopMenu();
-		} else {
-			mobileMenu();
-		}
-	}); 
+	// $(window).bind('scroll', function(){
+	// 	if(isMobile === false){
+	// 		desktopMenu();
+	// 	} else {
+	// 		mobileMenu();
+	// 	}
+	// }); 
 	
 	//desktop menu
 	// function desktopMenu(){
@@ -219,8 +205,8 @@ jQuery(document).ready(function($){
 				return false;
 			}
 			
-			thumbW = foliothumb.find('a').find('img').width();
-			thumbH = foliothumb.find('a').find('img').height();
+			thumbW = foliothumb.parent().width();
+			thumbH = foliothumb.parent().height();
 			
 			//get refrences needed
 			thumbCaption = $(this).find('a').attr('title');

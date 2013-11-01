@@ -34,9 +34,7 @@ get_header(); ?>
 			?>
 			
 			<!--section title-->
-			<div class="section-title">
-				<?php echo stripslashes(html_entity_decode(returnOptionValue('portfolio_title'))); ?>
-			</div>
+			
 			<!--end section title-->
 				
 			<!--start ajaxpage/post-->
