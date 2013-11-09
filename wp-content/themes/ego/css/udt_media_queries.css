@@ -150,7 +150,7 @@
 	-----------------------------*/
 	
 	.homepage,.section{position: inherit;}
-	.section .content{max-width:870px;padding-bottom:100px;}
+	.section .content{max-width:640px;padding-bottom:100px;}
 	.section .teaser{background-attachment:scroll; background-position:center center;}
 	.page-inner-left{width:65.3334%;margin-right:4%;}
 	.page-inner-right{width:65.3334%;}
@@ -164,7 +164,7 @@
 
 	/*inner pages*/
 	.header {height:auto;display:block;}
-	.header .inner{max-width:870px;margin:auto;}
+	.header .inner{max-width:930px;margin:auto;}
 	.header .logo-container{position:relative; float:left; margin-bottom:10px;}
 	
 		/* main menu
@@ -305,7 +305,7 @@
 
 	/*inner pages*/
 	.header {height:auto;display:block;}
-	.header .inner{max-width:870px;margin:auto;}
+	.header .inner{max-width:930px;margin:auto;}
 	.header .logo-container{position:relative;float:left;}
 	
 		/* main menu
@@ -513,7 +513,7 @@
 	
 	/*inner pages*/
 	.header {height:auto;display:block;}
-	.header .inner{max-width:870px;margin:auto;}
+	.header .inner{max-width:930px;margin:auto;}
 	.header .logo-container{position:relative;float:left;}
 
 		/* main menu
