@@ -785,9 +785,9 @@ word-wrap: break-word;/* Internet Explorer 5.5+ */
 	/*grid*/
 	#content-wrapper section.homepage #grid{width:876px; overflow:hidden;margin-left:-6px; position:relative;z-index:1;}
 	#content-wrapper section.homepage #grid .thumb-type-1{width:286px !important;height:196px!important;}
-	#content-wrapper section.homepage #grid .thumb-type-2{width:286px!important;height:398px!important;}
-	#content-wrapper section.homepage #grid .thumb-type-3{width:578px!important;height:398px!important;}
-	#content-wrapper section.homepage #grid .thumb-type-4{width:578px!important;height:196px!important;}
+	#content-wrapper section.homepage #grid .thumb-type-2{width:286px!important;height:410px!important;}
+	#content-wrapper section.homepage #grid .thumb-type-3{width:590px!important;height:410px!important;}
+	#content-wrapper section.homepage #grid .thumb-type-4{width:590px!important;height:196px!important;}
 	#content-wrapper section.homepage #grid .thumb-type-5{max-width:100%;}
 	
 

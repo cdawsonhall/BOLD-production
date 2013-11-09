@@ -655,8 +655,8 @@ function display_portfolio_meta_box() {
 					<label for="<?php echo $meta_box[ 'name' ]; ?>"><?php echo $meta_box[ 'title' ]; ?></label>
 					<select id="<?php echo $meta_box[ 'name' ]; ?>" name="<?php echo $meta_box[ 'name' ]; ?>" style="min-width:200px;">
 						<option value="udt-portfolio-thumb-1" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-1'); ?>>286px * 196px</option>
-						<option value="udt-portfolio-thumb-2" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-2'); ?>>286px * 398px</option>
-						<option value="udt-portfolio-thumb-3" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-3'); ?>>580px * 398px</option>
+						<option value="udt-portfolio-thumb-2" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-2'); ?>>286px * 410px</option>
+						<option value="udt-portfolio-thumb-3" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-3'); ?>>580px * 410px</option>
 						<option value="udt-portfolio-thumb-4" <?php if(isset($data[$meta_box['name']])) selected($data[$meta_box['name']],'udt-portfolio-thumb-4'); ?>>580px * 196px</option>
 					</select>
 					<p><?php echo $meta_box[ 'description' ]; ?></p>
