@@ -25,7 +25,7 @@ echo '
 
 .folio-thumb a .folio-thumb-rollover, .round-thumb a .thumb-rollover, .thumb a .thumb-rollover {
 	background:#'.returnOptionValue('thumb_rollover_color').';
-	background:rgba('.implode(',',hex2rgb(returnOptionValue('thumb_rollover_color'))).',0.9);
+	background:rgba('.implode(',',hex2rgb(returnOptionValue('thumb_rollover_color'))).',0.3);
 }
 
 .folio-thumb.active {

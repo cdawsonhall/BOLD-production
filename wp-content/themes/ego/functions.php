@@ -1016,7 +1016,7 @@ add_shortcode('blockquote', 'sc_blockquote');
 function sc_highlight( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'highlight_type' => 'bold',
-		'color' => '',
+		'color' => '#a2060e',
 		'style' => ''
 	), $atts ) );
 	if($highlight_type!='bold' && $highlight_type!='italic' && $highlight_type!='mark') {
@@ -1471,8 +1471,8 @@ function sc_slider( $atts ) {
 		$height='383px';
 	} else if($size=='full-width') {
 		$size_output='udt-full-width-image';
-		$width='930px';
-		$height='524px';
+		$width='870px';
+		$height='490px';
 	} else if($size=='full-size') {
 		$size_output='full';
 		$width='';

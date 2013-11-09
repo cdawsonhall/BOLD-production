@@ -217,6 +217,7 @@ if(is_home()) { ?>
 					<div id="folio-grid" class="js-masonry" >'."\n";
 
 					foreach ( $udt_portfolio as $udt_project ) {
+						$udt_portfolio_meta=get_post_meta($udt_project->ID, '_udt_portfolio_meta', true);
 						
 						$display_media_size='udt-portfolio-thumb-1';
 						$thumb_type='thumb-type-1';

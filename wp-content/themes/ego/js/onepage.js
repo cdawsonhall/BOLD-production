@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 		thumbH,
 		thumbCaption,
 		target,
-		hoverSpeed=500,
+		hoverSpeed=250,
 		hoverEase='easeOutExpo';
 
 
@@ -205,8 +205,8 @@ jQuery(document).ready(function($){
 				return false;
 			}
 			
-			thumbW = foliothumb.parent().width();
-			thumbH = foliothumb.parent().height();
+			thumbW = $(this).closest('.folio-thumb-container').width();
+			thumbH = $(this).closest('.folio-thumb-container').height();
 			
 			//get refrences needed
 			thumbCaption = $(this).find('a').attr('title');
@@ -233,7 +233,7 @@ jQuery(document).ready(function($){
 				return false;
 			}
 			//animate out
-			$(this).find('.folio-thumb-rollover').animate({opacity:0},hoverSpeed,'linear',function(){
+			$(this).find('.folio-thumb-rollover').animate({opacity:0}, 0,'linear',function(){
 				//delete rollover
 				$(this).remove();
 			});

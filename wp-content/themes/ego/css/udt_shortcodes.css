@@ -100,7 +100,7 @@
 		span.dropcap.turquoise { color:#60daec; }
 		span.dropcap.yellow { color:#fcdc01; }
 		span.dropcap.orange { color:#fc7101; }
-		span.dropcap.red { color:#ed0e1e; }
+		span.dropcap.red { color:#a2060e; }
 		span.dropcap.green { color:#aadb14; }
 		span.dropcap.blue { color:#42a0e9; }
 		span.dropcap.purple { color:#f22ef4; }
@@ -147,8 +147,8 @@
 		}
 		
 		strong.red {
-			color:#000;
-			background:#ed0e1e;
+			color:#eee;
+			background: #a2060e;
 			padding:0 3px;
 		}
 		
@@ -213,8 +213,8 @@
 		}
 		
 		em.red {
-			color:#000;
-			background:#ed0e1e;
+			color:#eee;
+			background:#a2060e;
 			padding:0 3px;
 		}
 		
