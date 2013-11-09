@@ -229,7 +229,7 @@
 	
 	/*thumb-structure*/
 	#folio-grid{max-width:930px; z-index:1; padding:0; overflow:hidden;} 
-		.folio-thumb-container{width:31%;position:relative;margin:1% 0 1% 0;float:left;padding:0 1%; overflow:hidden; z-index:1; }
+		.folio-thumb-container{position:relative;margin:1% 0 1% 0;float:left;padding:0 1%; overflow:hidden; z-index:1; }
 		.folio-thumb{ position:relative;}
 		/*.folio-thumb.active{border:5px solid rgba(255,39,120,0.9);-webkit-box-shadow:inset 0px 0px 0px 10px rgba(255,39,120,0.9)!important;-moz-box-shadow:inset 0px 0px 0px 10px rgba(255,39,120,0.9)!important;box-shadow:inset 0px 0px 0px 10px rgba(255,39,120,0.9) !important;}*/
 		.folio-thumb a{width:100%;float:left;}
