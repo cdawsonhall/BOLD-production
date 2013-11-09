@@ -98,7 +98,7 @@ get_header(); ?>
 					
 					if($slide_display_opt=='video-youtube' || $slide_display_opt=='video-vimeo') {
 						$udt_blog_image = '<div class="blog-post-media">';
-						$udt_blog_image .= '<div class="video" style="width:870px;height:524px;margin-bottom:0;">';
+						$udt_blog_image .= '<div class="video" style="width:930px;height:524px;margin-bottom:0;">';
 						if($slide_display_opt=='video-youtube') {
 							$udt_blog_image .= '<iframe src="http://www.youtube.com/embed/'.$slide_video_url.'?autohide=2&amp;disablekb=0&amp;fs=1&amp;hd=0&amp;loop=0&amp;rel=0&amp;showinfo=0&amp;showsearch=0&amp;wmode=transparent" frameborder="0" allowfullscreen></iframe>';
 						} else if($slide_display_opt=='video-vimeo') {
@@ -121,7 +121,7 @@ get_header(); ?>
 				
 				if($slide_display_opt=='video-youtube' || $slide_display_opt=='video-vimeo') {
 					$udt_blog_image = '<div class="blog-post-media">';
-					$udt_blog_image .= '<div class="video" style="width:870px;height:524px;margin-bottom:0;">';
+					$udt_blog_image .= '<div class="video" style="width:930px;height:524px;margin-bottom:0;">';
 					if($slide_display_opt=='video-youtube') {
 						$udt_blog_image .= '<iframe src="http://www.youtube.com/embed/'.$slide_video_url.'?autohide=2&amp;disablekb=0&amp;fs=1&amp;hd=0&amp;loop=0&amp;rel=0&amp;showinfo=0&amp;showsearch=0&amp;wmode=transparent" frameborder="0" allowfullscreen></iframe>';
 					} else if($slide_display_opt=='video-vimeo') {
