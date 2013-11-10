@@ -603,10 +603,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	----------------------------*/	
 
 	/*odd*/
-	.section.odd .divider{border-top:1px solid #ddd;}
+	.section.odd .divider{border-top:1px solid #ddd;float:left;}
 	
 	/*even*/
-	.section.even .divider{border-top:1px solid #444;}
+	.section.even .divider{border-top:1px solid #444; float:left;}
 
 	
 	/*twitter - pages
@@ -641,7 +641,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:none; border-bottom:0 !important;}
 	a{color:#ff005a;text-decoration:none;}
 	a:hover{color:#ff005a;}
-	p{margin-bottom:30px;}
+	p{margin-bottom:30px; max-width: 870px;}
 
 	/*titles*/
 	h1{font-size:40px;line-height:40px;}
@@ -734,9 +734,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 --------------------------------------------------------*/		
 
 	/*highlight selection*/
-	::selection,::-moz-selection, {background: #ff005a;color:#fff;}
-	::-moz-selection {background: #ff005a;color:#fff;}	
-	::-webkit-selection { background:#ff005a; color:#fff; }
+	::selection,::-moz-selection, {background: #a2060d;color:#fff;}
+	::-moz-selection {background: #a2060d;color:#fff;}	
+	::-webkit-selection { background:#a2060d; color:#fff; }
 
 	/*message box*/	
 	.message_box{ padding:15px;margin-bottom:30px; }
