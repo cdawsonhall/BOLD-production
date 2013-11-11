@@ -568,6 +568,38 @@ function save_homepage_section_meta_box( $post_id ) {
 add_action( 'admin_menu', 'create_homepage_section_meta_box' );
 add_action( 'save_post', 'save_homepage_section_meta_box' );
 
+// Custom taxonomies for portfolios
+function create_portfolio_taxonomies() {
+	$port_tx_labels = array(
+		'name'                       => _x( 'Portfolio Categories', 'taxonomy general name', 'cartel' ),
+		'singular_name'              => _x( 'Portfolio Category', 'taxonomy singular name', 'cartel' ),
+		'search_items'               => __( 'Search Portfolio Categories', 'cartel' ),
+		'popular_items'              => __( 'Popular Portfolio Categories', 'cartel' ),
+		'all_items'                  => __( 'All Portfolio Categories', 'cartel' ),
+		'parent_item'                => null,
+		'parent_item_colon'          => null,
+		'edit_item'                  => __( 'Edit Portfolio Category', 'cartel' ),
+		'update_item'                => __( 'Update Portfolio Category', 'cartel' ),
+		'add_new_item'               => __( 'Add New Portfolio Category', 'cartel' ),
+		'new_item_name'              => __( 'New Portfolio Category Name', 'cartel' ),
+		'separate_items_with_commas' => NULL,
+		'add_or_remove_items'        => __( 'Add or remove Portfolio Categories', 'cartel' ),
+		'choose_from_most_used'      => __( 'Choose from the most used Portfolio Categories', 'cartel' ),
+		'not_found'                  => __( 'No Portfolio Categories found.', 'cartel' ),
+		'menu_name'                  => __( 'Portfolio Categories', 'cartel' )
+	);
+	register_taxonomy('portfolio_category','udt_portfolio',array(
+		'hierarchical' => false,
+		'labels' => $port_tx_labels,
+		'show_ui' => true,
+		'show_tagcloud' => false,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'portfolio/category', 'with_front' => false )
+	));
+}
+add_action( 'init', 'create_portfolio_taxonomies' );
+
 // Custom post type for portfolios
 function create_portfolio_post_type() {
 	register_post_type( 'udt_portfolio',

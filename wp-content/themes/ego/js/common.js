@@ -73,9 +73,8 @@ jQuery(document).ready(function($){
 				return false;
 			}
 			 
-			thumbW = $(this).closest('.folio-thumb-container').width();.width();
-			alert($(this).closest('.folio-thumb-container').width();.width();)
-			thumbH = $(this).width();.height();
+			thumbW = $(this).closest('.folio-thumb-container').width();
+			thumbH = $(this).closest('.folio-thumb-container').height();
 			
 			//get refrences needed
 			thumbCaption = $(this).find('a').attr('title');
@@ -331,9 +330,32 @@ jQuery(document).ready(function($) {
 });
 
 /* SCRIPT FOR MASONRY.JS PORTFOLIO */
-var container = document.querySelector('#folio-grid');
-var msnry = new Masonry( container, {
-  // options
-  columnWidth: 296,
-  itemSelector: '.folio-thumb-container'
+
+jQuery(function($){
+	var masonry_cols = 3;
+	var masonry = $('#folio-grid');
+	calculateCols();
+	// initialize masonry
+	masonry.masonry({
+		itemSelector: '#folio-grid .folio-thumb-container',
+		columnWidth:Math.round((masonry.width()/ masonry_cols))
+	});
+	/*resize*/
+	jQuery(window).resize(function(){
+		calculateCols();
+		masonry.masonry({
+			itemSelector: '#folio-grid .folio-thumb-container',
+			isAnimated: false,
+			columnWidth:Math.round((masonry.width() / masonry_cols))
+		});
+	});
+	function calculateCols (){
+		if(masonry.width() <= 290) {
+			masonry_cols=1;
+		} else if(masonry.width() <= 426){
+			 masonry_cols=3;
+		}else{
+			masonry_cols=3;
+		}
+	}
 });

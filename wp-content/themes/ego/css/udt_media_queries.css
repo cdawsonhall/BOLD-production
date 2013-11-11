@@ -135,6 +135,9 @@
 	.pricing_table .pricing_table_col:last-child {
 		margin-bottom:0;
 	}
+	.scroll-down {
+	display: none;
+	}
 }
 
 /*Mobile Layout: Landscape Container width:768px

@@ -52,7 +52,20 @@ jQuery(document).ready(function($){
 	sliderHeight();
 	$('#wrapper, #footer').show();
 
-	
+	var pos;
+	var pos2;
+
+	$('#portfolio').waypoint(function(direction) {
+				pos = parseInt($(window).scrollTop());
+				window.location.hash = 'portfolio';
+				$('html,body').scrollTop(pos);
+	});      
+	$('#case-study').waypoint(function(direction) {
+				pos2 = parseInt($(window).scrollTop());
+				window.location.hash = '#case-study';
+				$('html,body').scrollTop(pos2);
+	}); 
+
 
 	//PARALLAX ----------------------------------------------------------------------------/
 		

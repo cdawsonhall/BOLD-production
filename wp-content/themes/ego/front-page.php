@@ -157,6 +157,7 @@ if(is_home()) { ?>
 		$homepage_slider.='</div>'."\n";
 		$homepage_slider.=$homepage_slide_caption."\n";
 		$homepage_slider.='</div>'."\n";
+		?><img class="scroll-down" src="<?php bloginfo('template_directory');?>/images/scroll-down3.png"/><?
 		$homepage_slider.='</div>'."\n";
 		echo $homepage_slider;
 	} else if($count_homepage_slides==1) {
@@ -204,8 +205,9 @@ if(is_home()) { ?>
 				$my_args_4 = array(
 					'post_type' => 'udt_portfolio',
 					'numberposts' => -1,
-					'orderby' => 'menu_order',
-					'order' => 'ASC'
+					'orderby'     => 'menu_order',
+					'order'       => 'ASC',
+					'portfolio_category'    => 'featured'
 				);
 				$udt_portfolio = get_posts( $my_args_4 );
 				$count_udt_portfolio = count($udt_portfolio);
