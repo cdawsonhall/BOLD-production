@@ -331,7 +331,7 @@ jQuery(document).ready(function($) {
 
 /* SCRIPT FOR MASONRY.JS PORTFOLIO */
 
-jQuery(function($){
+$(window).load(function($){
 	var masonry_cols = 3;
 	var masonry = $('#folio-grid');
 	calculateCols();

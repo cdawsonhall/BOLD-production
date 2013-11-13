@@ -228,7 +228,7 @@
 	#closeProject a:hover{background:rgba(255,39,120,1) url(../images/project-close.png) center -9.5px no-repeat !important;}
 	
 	/*thumb-structure*/
-	#folio-grid{max-width:876px; z-index:1; padding:0; overflow:hidden;} 
+	#folio-grid{max-width:876px; z-index:1; padding:0; overflow:hidden;display: block;margin-left: auto;margin-right: auto;} 
 		.folio-thumb-container{position:relative;margin:0 0 6px 6px;float:left;padding:0; overflow:hidden; z-index:1; }
 		.folio-thumb{ position:relative;}
 		/*.folio-thumb.active{border:5px solid rgba(255,39,120,0.9);-webkit-box-shadow:inset 0px 0px 0px 10px rgba(255,39,120,0.9)!important;-moz-box-shadow:inset 0px 0px 0px 10px rgba(255,39,120,0.9)!important;box-shadow:inset 0px 0px 0px 10px rgba(255,39,120,0.9) !important;}*/

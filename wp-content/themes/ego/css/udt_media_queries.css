@@ -24,7 +24,7 @@
 
 	/*portfolio
 	----------------------------*/
-	#content-wrapper section.pages #grid-folio .thumb{width:286px !important;height:196px !important;}
+	#folio-grid .thumb{width:286px !important;height:196px !important;}
 
 }
 
@@ -35,7 +35,7 @@
 	-----------------------------*/
 
 	.homepage,.section{position: inherit;}
-	.section .content{max-width:870px;margin:0 auto;position:relative;}
+	.section .content{max-width:876px;margin:0 auto;position:relative;}
 	.section .teaser{background-attachment:scroll; background-position:center center;}
 	.page-inner-left,.page-inner-right{width:610px;}
 	
@@ -48,7 +48,7 @@
 
 	/*inner pages*/
 	.header {display:block;}
-	.header .inner{max-width:870px;margin:auto;}
+	.header .inner{max-width:876px;margin:auto;}
 	
 	
 		/* main menu
@@ -62,6 +62,8 @@
 
 	/*portfolio
 	----------------------------*/
+
+	#folio-grid .thumb{width:286px !important;height:196px !important;}
 
 	/*navigation*/
 	#folio-navigation{width:1010px;height:40px;position:absolute;margin:auto; top:50%;left:50%;margin:-20px 0 0 -505px;}
@@ -153,7 +155,7 @@
 	-----------------------------*/
 	
 	.homepage,.section{position: inherit;}
-	.section .content{max-width:870px;padding-bottom:100px;}
+	.section .content{max-width:876px;padding-bottom:100px;}
 	.section .teaser{background-attachment:scroll; background-position:center center;}
 	.page-inner-left{width:65.3334%;margin-right:4%;}
 	.page-inner-right{width:65.3334%;}
@@ -202,6 +204,16 @@
 	/*portfolio
 	----------------------------*/
 
+	/*portfolio index grid
+	----------------------------*/
+	#folio-grid{width:646px!important;}
+	#folio-grid .thumb-type-1{width:209px !important;height:143px !important; margin-bottom: 5px; }
+	#folio-grid .thumb-type-2{width:209px !important;height:291px !important; margin-bottom: 5px; }
+	#folio-grid .thumb-type-3{width:424px !important;height:291px !important; margin-bottom: 5px; }
+	#folio-grid .thumb-type-4{width:424px !important;height:143px !important; margin-bottom: 5px; }
+	#folio-grid .thumb-type-5{max-width:100%;}
+
+
 	/*navigation*/
 	#folio-navigation{width:100%;position:relative;margin:0 auto;left:0;}
 	#folio-navigation ul li{width:30.6666%; float:left;}
@@ -225,9 +237,6 @@
 		.project-display.fullwidth img,.project-display.fullwidth .flexslider, .project-display.fullwidth .flexslider img{width:640px !important;height:310px !important;}
 
 	
-	/*thumb-structure*/
-	.folio-thumb-container{width:22%;position:relative;margin:0 0 18px 0;float:left;padding:0 1.5% }
-
 	
 	
 	/*blog
@@ -358,6 +367,15 @@
 	/*portfolio
 	----------------------------*/
 
+	/*portfolio index grid
+	----------------------------*/
+	#folio-grid { width:423px!important; margin-left: -3px; }
+	#folio-grid .thumb-type-1{ width:138px !important; height:94px !important; margin-bottom: 3px; margin-left: 3px; }
+	#folio-grid .thumb-type-2{ width:138px !important; height:191px !important; margin-bottom: 3px; margin-left: 3px; }
+	#folio-grid .thumb-type-3{ width:279px !important; height:191px !important; margin-bottom: 3px; margin-left: 3px; }
+	#folio-grid .thumb-type-4{ width:279px !important; height:94px !important; margin-bottom: 3px; margin-left: 3px; }
+	#folio-grid .thumb-type-5{max-width:100%;}
+
 	/*navigation*/
 	#folio-navigation{width:100%;position:relative; margin:0 auto;left:0;}
 	#folio-navigation ul li{width:30.6666%; float:left;}
@@ -379,9 +397,6 @@
 		.project-info{width:100%;}
 		.project-display.fullwidth img, .project-display.fullwidth .flexslider, .project-display.fullwidth .flexslider img{width:420px !important;height:203px !important;}
 	
-	
-	/*thumb-structure*/
-	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left;}
 	
 	/*blog
 	----------------------------*/
@@ -566,6 +581,17 @@
 
 	/*portfolio
 	----------------------------*/
+
+	/*portfolio index grid
+	----------------------------*/
+	#folio-grid{width:290px!important; margin-left:0 !important;}
+	#folio-grid .thumb-type-1{width:290px !important;height:199px !important; margin-bottom: 4px;}
+	#folio-grid .thumb-type-2{width:290px !important;height:403px !important; margin-bottom: 4px;}
+	#folio-grid .thumb-type-3{width:290px !important;height:199px !important; margin-bottom: 4px;}
+	#folio-grid .thumb-type-4{width:290px !important;height:98px !important; margin-bottom: 4px;}
+	#folio-grid .thumb-type-5{max-width:100%;}
+	#folio-grid .thumb-type-1,#folio-grid .thumb-type-2,#folio-grid .thumb-type-3,#folio-grid .thumb-type-4,#folio-grid .thumb-type-4{margin: 0 0 6px 0;}
+	
 	
 	/*navigation*/
 	#folio-navigation{width:100%;position:relative; margin:0 auto; left:auto;}
@@ -591,9 +617,6 @@
 	
 	
 	
-	/*thumb-structure*/
-	.folio-thumb-container{width:30.666666%;position:relative;margin:0 0 18px 0;float:left; }
-	.folio-thumb-container{width:100%;position:relative;margin:0 0 18px 0;float:left; }/*two cols*/	
 	
 	/*blog
 	----------------------------*/
